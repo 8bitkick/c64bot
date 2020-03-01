@@ -16,7 +16,7 @@ Xvfb :99 -screen 0 1280x1024x16
 DISPLAY=:99 x64 &
 ffmpeg -f x11grab -y -r 50 -video_size 1280x1024 -i :99.0  -pix_fmt yuv420p output.mp4
 ```
-It works! Here's a screenshot back of video back from a VICE Commodore 64 emulator running on an AWS EC2 instance:
+It works! Here's a screenshot of video back from a VICE Commodore 64 emulator running on an AWS EC2 instance:
 
 ![C64 boot screen](https://github.com/8bitkick/c64bot/blob/master/cloud-c64.png)
 
