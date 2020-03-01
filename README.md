@@ -9,7 +9,7 @@ These are initial notes on a project to create a Commodore 64 Twitter bot which 
 
 A key piece of this project is to get a C64 emulator running programs and generating video purely via Linux command line. [VICE](http://vice-emu.sourceforge.net) looks like the best emulator for the job.
 
-It's possible to use [xvfb](https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml) as the X11 Display for the headless c64 cloud instance and capture video using [ffmpeg](https://ffmpeg.org) x11grab as follows:
+It's possible to use [xvfb](https://www.x.org/releases/X11R7.6/doc/man/man1/Xvfb.1.xhtml) as the X server for the headless c64 cloud instance and capture video using [ffmpeg](https://ffmpeg.org) x11grab as follows:
 
 ```
 Xvfb :99 -screen 0 1280x1024x16 
