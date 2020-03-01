@@ -20,9 +20,11 @@ It works! Here's a screenshot back of video back from a VICE Commodore 64 emulat
 
 ![C64 boot screen](https://github.com/8bitkick/c64bot/blob/master/cloud-c64.png)
 
+Some cropping and scaling required in `ffmpeg` but this is a good start. 
+
 ## Input
 
-Using the Twitter API it's possible to take tweet text containing a Commodore 64 BASIC program listing and convert it into a .prg file ready for autorun on the emulator using the `petcat` utility included with vice with the following:
+Using the Twitter API we can take tweet text containing a Commodore 64 BASIC program listing and then convert it into a .prg file ready for autorun on the emulator using the `petcat` utility included with vice with the following:
 
 ```
 petcat -text -w2 -o basic.prg -- basic.txt
