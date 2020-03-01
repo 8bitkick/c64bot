@@ -32,6 +32,10 @@ Using the Twitter API we can take tweet text containing a Commodore 64 BASIC pro
 petcat -text -w2 -o basic.prg -- basic.txt
 ```
 
-NB this part I haven't got autorunning yet!
+The method doesn't seem to work per the manual, perhaps due to quirks of running headless. However you can also inject text into the keyboard buffer using a vice commandline option which is more successful:
+
+  `-keybuf "<string>"`
+  *Put the specified string into the keyboard buffer. Note that you can specify specific keycodes by using C-style escaped     hexcodes ("\x0a").*
+  
 
 That's all for now... let me know if you have any corrections / suggestions
