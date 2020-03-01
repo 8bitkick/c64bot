@@ -1,5 +1,5 @@
 # c64bot
-Commodore 64 twitter bot inspired by [@bbcmicrobot](www.twitter.com/bbcmicrobot)
+Commodore 64 twitter bot inspired by [@bbcmicrobot](https://www.twitter.com/bbcmicrobot)
 
 ## Background
 
