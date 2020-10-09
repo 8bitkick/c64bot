@@ -42,7 +42,7 @@ It works! Here's a screenshot of video back from a VICE Commodore 64 emulator ru
 
 ## Capturing Audio
 
-It is possible to capture an audio stream with `ffmpeg` by adding the `-f pulse` switch. An example currently used by my [Acorn Archimedes bot](https://twitter.com/bbcbasicbot):
+It is possible to capture an audio stream with `ffmpeg` by adding the `-f pulse` switch. An example currently used by [Acorn Archimedes bot](https://twitter.com/bbcbasicbot):
 
 ```
 DISPLAY=:99 timeout 35s ./arculator my & sleep 30 ; ffmpeg  -framerate 15 -f x11grab -draw_mouse 0 -s 640x512 -y -t 3 -i :99.0+16,12  -f pulse -thread_queue_size 1024  -t 3 -i default -ar 22050 -ab 64k -c:v libx264 -pix_fmt yuv420p -vf "scale=1280:1024" ./tmp/FRAME_CAPTURE.mp4
