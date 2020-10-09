@@ -48,7 +48,7 @@ It is possible to capture an audio stream with `ffmpeg` by adding the `-f pulse`
 DISPLAY=:99 timeout 35s ./arculator my & sleep 30 ; ffmpeg  -framerate 15 -f x11grab -draw_mouse 0 -s 640x512 -y -t 3 -i :99.0+16,12  -f pulse -thread_queue_size 1024  -t 3 -i default -ar 22050 -ab 64k -c:v libx264 -pix_fmt yuv420p -vf "scale=1280:1024" ./tmp/FRAME_CAPTURE.mp4
 ```
 
-This worked in initial tests. However more investigation is needed on synchronisation and to avoid any audio being dropped. It's possible that running `parecord` to capture raw audio and muxing it with `ffmped` in a second stage might be more effective. The best solution found so far, as used by BBC Micro Bot, is to modify the emulator save audio to a buffer file directly. 
+This worked in initial tests. However more investigation is needed on synchronisation and to avoid any audio being dropped. It's possible that running `parecord` to capture raw audio and muxing it with `ffmped` in a second stage might be more effective. The best solution found so far, as used by BBC Micro Bot, is to modify the emulator save the audio buffer to a file directly. 
 
 ## Formatting input
 
