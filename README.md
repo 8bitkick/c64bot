@@ -1,5 +1,5 @@
 # c64bot
-A general method to create twitter code bot inspired by my [@bbcmicrobot](https://www.twitter.com/bbcmicrobot) 
+A general method to create twitter code bot inspired by my [@bbcmicrobot](https://www.twitter.com/bbcmicrobot) using c64 as an example
 
 ## Background
 
