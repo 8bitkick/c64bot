@@ -1,9 +1,9 @@
 # c64bot
-A general method to create twitter code bot inspired by my [@bbcmicrobot](https://www.twitter.com/bbcmicrobot) using c64 as an example
+A general method to create twitter code bot inspired by my [@bbcmicrobot](https://github.com/8bitkick/BBCMicroBot) using c64 as an example
 
 ## Background
 
-This repo outlines techniques for those interested in creating a Twitter bots for other emulated machines - which remotely executes code on an emulator and returns a video of the execution in a similar style to [BBC Micro Bot](https://www.8bitkick.cc/bbc-micro-bot.html). You'll notice this method of video capture can in fact be used with any X11 application. Applications of this method now implemented include [Atari8bitbot](https://atari8bitbot.com), [AppleIIbot](https://atari8bitbot.com/apple-ii-bot/), and beta [Acorn Archimedes bot](https://twitter.com/bbcbasicbot).
+This repo outlines techniques for those interested in creating a Twitter bots for other emulated machines - which remotely executes code on an emulator and returns a video of the execution in a similar style to [BBC Micro Bot](https://github.com/8bitkick/BBCMicroBot). You'll notice this method of video capture can in fact be used with any X11 application. Applications of this method now implemented include [Atari8bitbot](https://atari8bitbot.com), [AppleIIbot](https://atari8bitbot.com/apple-ii-bot/), and beta [Acorn Archimedes bot](https://twitter.com/bbcbasicbot).
 
 The method differs from BBC Micro Bot. BBC Micro Bot provides a great starting point for the Twitter bot mechanics for any application. However the emulation piece is specific to the BBC Micro - it has deep hooks enabling faster than real-time images and audio capture, and direct injection of input into the emulator memory. 
 
